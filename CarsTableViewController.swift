@@ -47,8 +47,8 @@ class CarsTableViewController: UITableViewController {
     // Function triggered when the user selects a cell
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row) //showing the selected cell's index Path
-        let cell : UITableViewCell = tableView.cellForRow(at: indexPath)
-        print(cell.textLabel?.text as Any)
+        let cell : UITableViewCell = tableView.cellForRow(at: indexPath)!
+        print(cell.textLabel!.text!)
     }
     
     /*
